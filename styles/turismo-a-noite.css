@@ -1,0 +1,77 @@
+/* garante que os elementos não "estourem" o limite da página (esquerda pra direita) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.lugar {
+    margin-top: 30px;
+    background-color: #dadada;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lugar img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    .lugar img {
+        width: 100%;
+    }
+}
